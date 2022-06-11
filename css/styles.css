@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+:root {
+  font-size: 16px;
+  font-family: "Outfit", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  background-color: hsl(212deg, 45%, 89%);
+}
+
+.container {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  background-color: hsl(212deg, 45%, 89%);
+}
+
+.card {
+  width: 320px;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 15px;
+  -webkit-box-shadow: 0 0 5px 2px rgba(123, 135, 157, 0.5);
+          box-shadow: 0 0 5px 2px rgba(123, 135, 157, 0.5);
+}
+.card__image {
+  overflow: hidden;
+  border-radius: 10px;
+}
+.card__image img {
+  width: 100%;
+  display: block;
+}
+.card__text {
+  width: 100%;
+  padding: 1em 0;
+}
+.card__text__title {
+  font-size: 1.3em;
+  color: hsl(218deg, 44%, 22%);
+  text-align: center;
+}
+.card__text__description {
+  font-size: 0.9em;
+  margin: 1em;
+  color: hsl(220deg, 15%, 55%);
+  text-align: center;
+}
+
+.attribution {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  -webkit-animation: animation-bottom 0.5s both;
+          animation: animation-bottom 0.5s both;
+}
+.attribution__profile {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 0.8em;
+  border-radius: 10px;
+  background-color: hsl(0deg, 0%, 100%);
+  text-align: center;
+  color: hsl(220deg, 15%, 55%);
+}
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+@-webkit-keyframes animation-bottom {
+  from {
+    top: 0;
+  }
+  to {
+    top: 10px;
+  }
+}
+
+@keyframes animation-bottom {
+  from {
+    top: 0;
+  }
+  to {
+    top: 10px;
+  }
+}

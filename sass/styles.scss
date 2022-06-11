@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+$Qr_code: hsl(228, 45%, 44%);
+$White: hsl(0, 0%, 100%);
+$Light_gray: hsl(212, 45%, 89%);
+$Grayish_blue: hsl(220, 15%, 55%);
+$Dark_blue: hsl(218, 44%, 22%);
+
+:root {
+	font-size: 16px;
+	font-family: "Outfit", sans-serif;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	background-color: $Light_gray;
+}
+
+.container {
+	position: relative;
+	max-width: 1400px;
+	margin: 0 auto;
+	display: flex;
+	height: 100vh;
+	background-color: $Light_gray;
+}
+.card {
+	width: 320px;
+	padding: 15px;
+	display: flex;
+	margin: auto;
+	flex-direction: column;
+	background-color: $White;
+	border-radius: 15px;
+	box-shadow: 0 0 5px 2px rgba($Grayish_blue, 0.5);
+
+	&__image {
+		overflow: hidden;
+		border-radius: 10px;
+
+		& img {
+			width: 100%;
+			display: block;
+		}
+	}
+	&__text {
+		width: 100%;
+		padding: 1em 0;
+		&__title {
+			font-size: 1.3em;
+			color: $Dark_blue;
+
+			text-align: center;
+		}
+		&__description {
+			font-size: 0.9em;
+			margin: 1em;
+			color: $Grayish_blue;
+			text-align: center;
+		}
+	}
+}
+
+.attribution {
+	width: 100%;
+	position: absolute;
+	top: 0;
+    animation: animation-bottom 0.5s both;
+	&__profile {
+		max-width: 320px;
+		margin: 0 auto;
+		padding: 10px;
+		font-size: 0.8em;
+		border-radius: 10px;
+		background-color: $White;
+		text-align: center;
+		color: $Grayish_blue;
+	}
+	& a {
+		color: $Qr_code;
+	}
+}
+
+@keyframes animation-bottom {
+	from {
+		top: 0;
+	}
+	to {
+		top: 10px;
+	}
+}
